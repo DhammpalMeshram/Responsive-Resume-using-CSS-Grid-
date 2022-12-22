@@ -82,11 +82,21 @@ img{
     justify-content: space-evenly;
     font-size: 20px;
 }
-li{
-    margin-top: 10px;
-
+.icon{
+    color:rgb(64, 25, 204);
+}
+.icon:hover{
+    cursor: pointer;
+    color:rgb(234, 245, 76);
 }
 
+span{
+    color:black;
+}
+
+li{
+    margin-top: 10px;
+}
 .skills-title{
     /* font-size: 0.75rem; */
     text-align: center;
@@ -102,13 +112,40 @@ li{
     text-align: left;
     padding-bottom: 0.5rem;
 }
+.skill-progress{
+    margin-top: 0px;
+}
 .progress-bar{
     border: 1px white solid;
     height: 4px;
-
 }
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    /* padding: 2rem 3rem; */
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{
+    text-align: justify;
+    padding: 0.5rem;
+}
+.edu-grid{
+    display: grid;
+    grid-template-columns:550px 150px ;
+    grid-template-rows: repeat(3, 200px);
+}
+
+
 /* 
-list item and there progress report ko gap ko khatm karo
+
  */
 
 
