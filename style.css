@@ -72,25 +72,43 @@ img{
     text-align: center;
     padding: 1rem;
 }
+.social-media{
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+li{
+    margin-top: 10px;
+
+}
+
+.skills-title{
+    /* font-size: 0.75rem; */
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+
+}
 /* 
-
-
-2. Skills Title
-The Skills title should have class name 'skills' and should have the following CSS properties
-(a) It should have a font size of 0.75 rem
-(b) its text should be center-aligned and uppercase
-(c) It should have a padding of 1rem on top and bottom and 0.5rem on left and right.
-
-3. Skill Name
-The Skills Name should have class name 'skill-name' and should have the following CSS properties
-(a) It should have a font size and weight of 0.65 rem
-(b) its text should be left-aligned.
-(c) It should have a padding of 0.5 rem at bottom
-
-4. Progress Bar
-The Progress Bar should have the class name 'progress-bar' and should have the following CSS properties:
-(a) Give it a border of '1px white solid' and a height of '4px'
-
+list item and there progress report ko gap ko khatm karo
  */
 
 
