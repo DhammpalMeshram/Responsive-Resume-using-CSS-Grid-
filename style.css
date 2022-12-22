@@ -5,5 +5,98 @@
     list-style: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    display: block;
+    background-color: black;
+    
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    background-color: grey;
+    margin: 20px auto;
+    display:grid;
+    grid-template-columns: 300px 700px;
+    grid-template-rows: 1000px;
+    padding: 20px 60px;
+    
+    /* justify-items: center; */
 
-/* Write CSS code below */
+}
+section{
+    display: block;
+}
+.left-section{
+    grid-column: span 1;
+    color: #000000;
+    background-color: #dd80f0;
+}
+.right-section{
+    grid-column: span 1/ span 2;
+    color: #000000;
+    background-color: #c2e28e;
+}
+
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+    
+}
+img{
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    /* color: white; */
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+/* 
+
+
+2. Skills Title
+The Skills title should have class name 'skills' and should have the following CSS properties
+(a) It should have a font size of 0.75 rem
+(b) its text should be center-aligned and uppercase
+(c) It should have a padding of 1rem on top and bottom and 0.5rem on left and right.
+
+3. Skill Name
+The Skills Name should have class name 'skill-name' and should have the following CSS properties
+(a) It should have a font size and weight of 0.65 rem
+(b) its text should be left-aligned.
+(c) It should have a padding of 0.5 rem at bottom
+
+4. Progress Bar
+The Progress Bar should have the class name 'progress-bar' and should have the following CSS properties:
+(a) Give it a border of '1px white solid' and a height of '4px'
+
+ */
+
+
+
+
+
+
+
+
