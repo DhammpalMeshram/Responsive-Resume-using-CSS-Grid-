@@ -17,10 +17,11 @@ body{
     margin: 20px auto;
     display:grid;
     grid-template-columns: 300px 700px;
-    grid-template-rows: 1000px;
+    /* grid-template-rows: 1000px; */
     padding: 20px 60px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
      /* justify-items: center; */
+     justify-content: center;
 }
 section{
     display: block;
@@ -116,12 +117,24 @@ li{
     border: 1px white solid;
     height: 4px;
 }
+
+/* right section */
+
 .right-main-content{
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
+
+
+    /*extra properties add 
+        remove in failure */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    
 }
+
 .right-title{
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -133,9 +146,13 @@ li{
     text-align: justify;
     padding: 0.5rem;
 } 
+
+
+
+
 .uni-or-firm{
     display: block;
-    width: 100px;
+    width: 20%;
     padding: 0.5rem;
     font-weight: bold; 
     /* text-align: center; */
@@ -158,7 +175,8 @@ li{
 }
 .item{
     display: block;
-    width: 450px;
+    /* width: 450px; */
+    width: 65%;
 }
 .edu-flex{
     display: flex;
@@ -187,33 +205,10 @@ li{
 @media screen and (max-width: 630px){
     .main-content{
         grid-template-columns:repeat(1, 1fr);
-        /* column-gap: 5px; */
-        /* padding:10px; */
-        /* margin: 20px; */
-        width: 100%;
-
-
-    }
-    
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        padding: auto;
+    }    
 }
-@media screen and (max-width: 673px){
-    .main-content{
-        /* grid-template-columns:repeat(1, 1fr); */
-    }
-    
-}
-
-
-
-
-/* When the width of the resume is greater than or equal to 674px, then there should be 2 grid columns of size 300px and 700px.
-Apply media queries such that when the width of the resume is reduced below 674 px, the left section should stack above the right section using CSS Grid template columns property equal to 'repeat(1, 1fr);'. So, when the width of the resume is decreased below 674 px, then there should only be 1 Grid column. Please check out the part 5 video to understand how your resume should look like.
-
-The class 'main-content' must have a width of 90% and a minimum height of 1000px for the test cases of the part 5 to pass.
-
-
-Optional: Similarly you can apply other properties like reducing font size when the width of the device is reduced below a certain threshold using media queries.
-
- */
-
-
