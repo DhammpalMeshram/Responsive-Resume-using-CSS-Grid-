@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: block;
+    background-color: black;
+    
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    background-color: grey;
+    margin: 20px auto;
+    display:grid;
+    grid-template-columns: 300px 700px;
+    /* grid-template-rows: 1000px; */
+    padding: 20px 60px;
+    box-sizing: border-box;
+     /* justify-items: center; */
+     justify-content: center;
+}
+section{
+    display: block;
+}
+.left-section{
+    grid-column: span 1;
+    color: #000000;
+    background-color: #dd80f0;
+}
+.right-section{
+    grid-column: span 1/ span 2;
+    color: #000000;
+    background-color: #c2e28e;
+}
+
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    padding: 1rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+    
+}
+img{
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    /* color: white; */
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.icon{
+    color:rgb(64, 25, 204);
+}
+.icon:hover{
+    cursor: pointer;
+    color:rgb(234, 245, 76);
+}
+
+span{
+    color:black;
+    /* font-weight: bold; */
+    /* font-style: italic; */
+}
+
+li{
+    margin-top: 10px;
+}
+.skills-title{
+    /* font-size: 0.75rem; */
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.skill-progress{
+    margin-top: 0px;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+}
+
+/* right section */
+
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+
+    /*extra properties add 
+        remove in failure */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.para{ 
+    text-align: justify;
+    padding: 0.5rem;
+} 
+
+
+
+
+.uni-or-firm{
+    display: block;
+    width: 20%;
+    padding: 0.5rem;
+    font-weight: bold; 
+    /* text-align: center; */
+}
+#year{
+    font-size: 12px;
+}
+#grade{
+
+}
+.social-media{
+    z-index: 100;
+
+}
+
+.title-dec{
+    padding: 0.5rem;
+    color: green;
+    text-decoration:underline;
+}
+.item{
+    display: block;
+    /* width: 450px; */
+    width: 65%;
+}
+.edu-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 15px; */
+    justify-content: space-between;
+}
+.exp-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 15px; */
+    justify-content: space-between;
+}
+.pro-flex{
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 15px; */
+    justify-content: space-between;
+}
+#project{
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(238, 29, 238);
+}
+
+@media screen and (max-width: 630px){
+    .main-content{
+        grid-template-columns:repeat(1, 1fr);
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        padding: auto;
+    }    
+}
