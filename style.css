@@ -30,11 +30,14 @@ section{
     grid-column: span 1;
     color: #000000;
     background-color: #dd80f0;
+   
+    
 }
 .right-section{
     grid-column: span 1/ span 2;
     color: #000000;
     background-color: #c2e28e;
+   
 }
 
 .left-content{
@@ -217,8 +220,7 @@ li{
         align-items: center;
         /* text-align: center; */
         padding: auto;
-    }    
+    } 
 }
-
 
 /*cheking if all are mergred */
