@@ -19,9 +19,6 @@ body{
     background-color: grey;
     margin: 20px auto;
     display: grid;
-
-    /* grid-template-rows: 20% 80%; */
-    
     grid-template-columns: 300px 700px;
 }
 
@@ -30,7 +27,6 @@ body{
  /* <-- left section stars --> */
 
 .left-section{
-    /* grid-area: 1/1/3/2; */
     grid-column: span 1;
     color: #000000;
     background-color: #dd80f0;
@@ -52,14 +48,6 @@ img{
     width: 60%;
 } 
 
-/* .profile-image{
-    display: block;
-    margin: auto;
-    width: 60%;
-    border: 5px solid white;
-    border-radius: 30%;
-} */
-
 .name{
     font-size: 1.2rem;
     font-weight: 700;
@@ -67,7 +55,6 @@ img{
     text-transform: uppercase;
     letter-spacing: 0.02px;
     padding: 0.8rem;
-    /* color: blue; */
 }
 .designation{
     font-size: 1rem;
@@ -77,11 +64,11 @@ img{
 }
 
 .description {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     text-align: center;
-    padding: 1rem;
+    padding:0;
+    margin: 5px 0px;
     font-weight: 700;
-    /* color: #fff; */
 }
 
 .social-media{
@@ -96,11 +83,16 @@ img{
 .icon:hover{
     cursor: pointer;
     color:rgb(234, 245, 76);
+    transform: scale(1.5);
+}
+
+.icon_official{
+    cursor: pointer;
+    color:rgb(64, 25, 204);
 }
 
 span{
     color:black;
-    /* font-weight: bold; */
     font-style: italic;
 }
 
@@ -108,14 +100,13 @@ li{
     margin-top: 10px;
 }
 .skills-title{
-    font-size : 0.75rem;
+    font-size : 1rem;
     text-align: center;
     text-transform: uppercase;
-    padding: 1rem 0.5rem;
-    color: #fff;
+    padding: 0.5rem 0.5rem;
+    color: #131111;
+    margin-bottom: 0px;
 }
-
-/* below is extra */
 .skills {
     font-size: 0.75rem;
     text-align: center;
@@ -124,14 +115,12 @@ li{
     color: #fff;
 }
 
-/* .skill-name{
-    font-size: 0.65rem;
-    font-weight: 0.65rem;
-    text-align: left;
-    padding-bottom: 0.5rem;
-} */
+.skills hr {
+    margin-bottom: 1rem;
+}
 
 .skill-name {
+    margin-bottom: 5px;
     font-size: 0.65rem;
     font-weight: 700;
     text-align: left;
@@ -140,50 +129,36 @@ li{
     text-transform: uppercase;
 }
 
-/* .progress-bar{
-    border: 1px white solid;
-    height: 4px;
-} */
-
 .progress-bar {
     border: 1px solid white;
     height: 4px;
     background-color: white;
     border-radius: 5px;
 }
-
-/* .skill-progress{
-    margin-top: 0px;
-} */
 .skill-progress {
     margin-bottom: 10px;
 }
 
-
 /* <-- left section ends --> */
 
 .right-section {
-    /* grid-area: 1/2/3/3; */
     grid-column: span 1/ span 2;
-    /* background-color: white; */
-
     background-color: #c2e28e;
     color: #000000;
 }
 
 .right-main-content {
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
+}
 
-    /*extra properties add 
-        remove in failure */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
-
+.right-main-content hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .right-title{
     text-transform: uppercase;
+    text-decoration: underline;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 0.5rem;
@@ -191,8 +166,16 @@ li{
 }
 .para{ 
     text-align: justify;
-    padding: 0.5rem;
+    padding: 0rem 0.5rem ;
 } 
+
+.para ul{ 
+    text-align: justify;
+    padding: 0px ;
+    margin: 0px;
+    list-style: circle;
+} 
+
 
 .uni-or-firm{
     display: block;
@@ -211,13 +194,24 @@ li{
 
 .title-dec{
     padding: 0.5rem;
-    color: green;
+    color: rgb(10, 128, 26);
+    /* color: white; */
     text-decoration:underline;
+    margin-bottom: 0px;
 }
 .item{
     display: block;
-    width: 65%;
+    width: 75%;
 }
+
+#inlinetitle{
+    display: inline-block;
+}
+
+.item span{
+    padding: 0.5rem;
+}
+
 .edu-flex{
     display: flex;
     flex-wrap: wrap;
@@ -247,4 +241,17 @@ li{
     .right-section {
         grid-area: auto;
     }
+}
+
+/* for making the bullets list */
+.testing{
+    display:flex;
+    padding-left: 10px;
+}
+.bullet{
+    display: inline;
+    margin-right:10px;
+}
+.text{
+    text-align: justify;
 }
